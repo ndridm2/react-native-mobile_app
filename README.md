@@ -15,5 +15,6 @@ The source for the React Native documentation and website is hosted on a separat
 
 Screenshott
 
-<img width="298" alt="Screen Shot 2024-06-11 at 12 08 17" src="https://github.com/ndridm2/react-native-mobile_app/assets/64353589/486a57c6-4ce5-4bef-9332-c5b8a8d8d638">
 <img width="298" alt="Screen Shot 2024-06-11 at 12 15 34" src="https://github.com/ndridm2/react-native-mobile_app/assets/64353589/a7f945df-8274-45e5-b120-7bf7e5ba5f0a">
+<img width="298" alt="Screen Shot 2024-06-11 at 12 08 17" src="https://github.com/ndridm2/react-native-mobile_app/assets/64353589/486a57c6-4ce5-4bef-9332-c5b8a8d8d638">
+

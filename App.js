@@ -25,6 +25,8 @@ function MyStack() {
       <Stack.Screen name="Gallery" component={GalleryScreen} />
       <Stack.Screen name="Dzikir" component={DzikirScreen} />
       <Stack.Screen name="DetailContact" component={DetailContact} />
+   <Stack.Screen name="Calendar" component={CalendarScreen} />
+      <Stack.Screen name="Profile" component={ProfileScreen} />
     </Stack.Navigator>
   );
 }

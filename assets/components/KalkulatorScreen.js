@@ -27,23 +27,29 @@ const KalkulatorScreen = ({ navigation }) => {
 	}; 
  
 	// Function to handle equal button press 
-	const handleEqual = () => { 
-		const num1 = parseFloat(firstValue); 
-		const num2 = parseFloat(displayValue); 
- 
-		if (operator === '+') { 
-			setDisplayValue((num1 + num2).toString()); 
-		} else if (operator === '-') { 
-			setDisplayValue((num1 - num2).toString()); 
-		} else if (operator === '*') { 
-			setDisplayValue((num1 * num2).toString()); 
-		} else if (operator === '/') { 
-			setDisplayValue((num1 / num2).toString()); 
-		} 
- 
-		setOperator(null); 
-		setFirstValue(''); 
-	}; 
+	const handleOperatorInput = (operator) => {
+	    setOperator(operator);
+	    setFirstValue(displayValue);
+	    setDisplayValue(firstValue);
+	  };
+	
+	  const handleEqual = () => {
+	    const num1 = parseFloat(firstValue);
+	    const num2 = parseFloat(displayValue);
+	
+	    if (operator === "+") {
+	      setDisplayValue((num1 + num2).toString());
+	    } else if (operator === "-") {
+	      setDisplayValue((num1 - num2).toString());
+	    } else if (operator === "*") {
+	      setDisplayValue((num1 * num2).toString());
+	    } else if (operator === "/") {
+	      setDisplayValue((num1 / num2).toString());
+	    }
+	
+	    setOperator(null);
+	    setFirstValue("");
+	  };
  
 	// Function to handle clear button press 
 	const handleClear = () => { 
@@ -56,7 +62,7 @@ const KalkulatorScreen = ({ navigation }) => {
 		<View style={styles.container}> 
 			<View style={styles.displayContainer}> 
 				<Text style={styles.displayText}> 
-					{displayValue} 
+					{firstValue} {operator} {displayValue}
 				</Text> 
 			</View> 
 			<View style={styles.buttonContainer}> 
